@@ -1,0 +1,47 @@
+.flight-detail-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.flight-details {
+  margin-bottom: 20px;
+}
+
+.flight-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.flight-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.flight-description {
+  margin-bottom: 10px;
+}
+
+.flight-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #eaeaea;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Dodatni stilovi prema potrebama */
