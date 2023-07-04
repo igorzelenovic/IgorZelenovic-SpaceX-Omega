@@ -1,14 +1,21 @@
+import React, { useEffect } from "react";
 import axios from "axios";
 
-axios
-  .get("https://api.spacexdata.com/v3/dragons")
-  .then((response) => {
-    // Uspesno povuceni podaci
-    console.log(response.data);
-  })
-  .catch((error) => {
-    // Handle error here by logging to console or displaying an error message to user.
-    console.error(error.message);
-  });
+const AllDragons = () => {
+  useEffect(() => {
+    axios
+      .get("https://api.spacexdata.com/v3/dragons")
+      .then((response) => {
+        // Uspesno povuceni podaci
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // Greska prilikom povlacenja podataka
+        console.error(error.message);
+      });
+  }, []);
+
+  return <div>Rendering AllDragons component...</div>;
+};
 
 export default AllDragons;

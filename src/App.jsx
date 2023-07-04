@@ -12,6 +12,32 @@ import "./style/searchbar.css";
 import "./style/themetoggler.css";
 import "./components/InfiniteScroll";
 
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    // You can log the error or send it to an error tracking service
+    console.error("Error caught by error boundary:", error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      // Render fallback UI when there is an error
+      return <h1>Something went wrong.</h1>;
+    }
+
+    // Render children if no error occurred
+    return this.props.children;
+  }
+}
+
 const DARK_THEME_CLASS = "dark-theme";
 
 function setThemePreference(darkModeEnabled) {
@@ -124,4 +150,10 @@ function App() {
   );
 }
 
-export default App;
+export default function Root() {
+  return (
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
+  );
+}
