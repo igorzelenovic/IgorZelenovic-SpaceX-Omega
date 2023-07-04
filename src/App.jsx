@@ -1,8 +1,7 @@
-import { Router, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import FlightDetailPage from "./pages/FlightDetailPage";
-import ErrorBoundary from "./components/ErrorBoundary";
 
 import "./style/app.css";
 import "./style/flightdetail.css";
@@ -15,11 +14,9 @@ import "./style/themetoggler.css";
 
 export default function App() {
   return (
-    <Router>
-      <ErrorBoundary>
-        <Route exact path="/" component={Home} />
-        <Route path="/flight/:id" component={FlightDetailPage} />
-      </ErrorBoundary>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/flight/:id" element={<FlightDetailPage />} />
+    </Routes>
   );
 }
