@@ -1,7 +1,10 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { Router, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 import Home from "./pages/Home";
 import FlightDetailPage from "./pages/FlightDetailPage";
+import ErrorBoundary from "./components/ErrorBoundary";
+
 import "./style/app.css";
 import "./style/flightdetail.css";
 import "./style/flightdetailpage.css";
@@ -10,25 +13,25 @@ import "./style/flightlist.css";
 import "./style/home.css";
 import "./style/searchbar.css";
 import "./style/themetoggler.css";
-import ErrorBoundary from './components/ErrorBoundary';
 
 const DARK_THEME_CLASS = "dark-theme";
 
 function setThemePreference(darkModeEnabled) {
   if (darkModeEnabled) {
-    document.documentElement.classList.add(DARK_THEME_CLASS);
+    document.body.classList.add(DARK_THEME_CLASS);
     localStorage.setItem("theme", DARK_THEME_CLASS);
   } else {
-    document.documentElement.classList.remove(DARK_THEME_CLASS);
+    document.body.classList.remove(DARK_THEME_CLASS);
     localStorage.removeItem("theme");
   }
 }
 
+// eslint-disable-next-line
 function getThemePreference() {
   return localStorage.getItem("theme") === DARK_THEME_CLASS;
 }
 
-function App() {
+export default function App() {
   const [darkMode, setDarkMode] = useState(getThemePreference());
 
   useEffect(() => {
@@ -40,7 +43,7 @@ function App() {
   };
 
   return (
-    <div className={`App ${darkMode ? DARK_THEME_CLASS : ""}`}>
+    <div className={darkMode ? `App ${DARK_THEME_CLASS}` : "App"}>
       <header>
         <div className="theme-toggler">
           <label className="switch">
@@ -120,12 +123,10 @@ function App() {
   );
 }
 
-export default function Root() {
-  return (
+export const Root = () => {
+  <Router>
     <ErrorBoundary>
-      <Router>
-        <App />
-      </Router>
+      <App />
     </ErrorBoundary>
-  );
-}
+  </Router>;
+};
