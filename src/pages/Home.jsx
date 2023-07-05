@@ -13,9 +13,15 @@ import Roadster from '../api/roadster/Roadster';
 import AllRockets from '../api/rockets/AllRockets';
 import AllShips from '../api/ships/AllShips';
 
+import ThemeToggler from "../components/ThemeToggler";
+import SearchBar from "../components/SearchBar";
+
 function Home() {
   return (
     <div className="container">
+      <ThemeToggler />
+      <SearchBar />
+
       <div className="flight">
         <h1 className="section-title">Capsules</h1>
         <AllCapsules />

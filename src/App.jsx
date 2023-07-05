@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FlightDetailPage from "./pages/FlightDetailPage";
 
+
+
 import "./style/app.css";
 import "./style/flightdetail.css";
 import "./style/flightdetailpage.css";

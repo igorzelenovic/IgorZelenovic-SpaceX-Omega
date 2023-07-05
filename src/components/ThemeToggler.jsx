@@ -1,17 +1,32 @@
-import React, { useState } from "react";
-import "./ThemeToggler.css";
+import React, { useState, useEffect } from "react";
+import "../style/themetoggler.css";
 
 const ThemeToggler = () => {
   const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "dark") {
+      setDarkMode(true);
+    }
+  }, []);
+
   const toggleTheme = () => {
-    setDarkMode(!darkMode);
-    // Ovde možete dodati logiku za promenu teme, na primer primenu odgovarajućih CSS klasa na elemente aplikacije
-    // Možete koristiti "darkMode" vrednost za dinamičku promenu teme
+    setDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      if (newMode) {
+        document.body.classList.add("dark-theme");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.body.classList.remove("dark-theme");
+        localStorage.setItem("theme", "light");
+      }
+      return newMode;
+    });
   };
 
   return (
-    <label className={`switch ${darkMode ? "dark-mode" : ""}`}>
+    <label className="switch">
       <input
         type="checkbox"
         className="input__check"
