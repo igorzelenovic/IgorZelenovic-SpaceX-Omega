@@ -7,9 +7,9 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/whitesky.webp");
+  background-image: url("../assets/sky.webp");
   background-size: 100% 100%; 
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
 }
 
