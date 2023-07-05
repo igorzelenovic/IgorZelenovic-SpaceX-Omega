@@ -15,12 +15,14 @@ import AllShips from '../api/ships/AllShips';
 
 import ThemeToggler from "../components/ThemeToggler";
 import SearchBar from "../components/SearchBar";
+import LogoSpaceX from "../components/LogoSpaceX"
 
 function Home() {
   return (
     <div className="container">
       <ThemeToggler />
       <SearchBar />
+      <LogoSpaceX />
 
       <div className="flight">
         <h1 className="section-title">Capsules</h1>
