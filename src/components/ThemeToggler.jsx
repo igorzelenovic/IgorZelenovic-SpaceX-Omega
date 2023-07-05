@@ -8,6 +8,10 @@ const ThemeToggler = () => {
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "dark") {
       setDarkMode(true);
+      document.body.classList.add("dark-theme");
+    } else {
+      setDarkMode(false);
+      document.body.classList.remove("dark-theme");
     }
   }, []);
 

@@ -1,5 +1,8 @@
 body {
-  background-color: #ffffff; /* bela boja pozadine */
+  background-image: url("../assets/skylight.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
