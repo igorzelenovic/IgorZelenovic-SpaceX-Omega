@@ -1,16 +1,11 @@
 import { Routes, Route } from "react-router-dom";
+import "./style/app.css";
 
 import Home from "./pages/Home";
-import FlightDetailPage from "./pages/FlightDetailPage";
-
-import "./style/app.css";
-import "./style/flightdetail.css";
-import "./style/flightdetailpage.css";
-import "./style/flightitem.css";
-import "./style/flightlist.css";
 import "./style/home.css";
-import "./style/searchbar.css";
-import "./style/themetoggler.css";
+
+import FlightDetailPage from "./pages/FlightDetailPage";
+import "./style/flightdetailpage.css";
 
 export default function App() {
   return (
