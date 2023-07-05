@@ -12,40 +12,95 @@ function Home() {
       <LogoSpaceX />
 
       <div className="flight">
-        <h1 className="name">Flight 1</h1>
+      <div class="box">
+        <div className="flight-image"></div>
+        <h1 className="flight-name">Flight xzy</h1>
+        <p className="flight-date">Flight Date xzy</p>
+        <p className="flight-description">Flight Description xzy</p>
+        <button className="more-details-button">More Details</button>
+        </div>
       </div>
 
       <div className="flight">
-        <h1 className="name">Flight 2</h1>
+      <div class="box">
+        <div className="flight-image"></div>
+        <h1 className="flight-name">Flight xzy</h1>
+        <p className="flight-date">Flight Date xzy</p>
+        <p className="flight-description">Flight Description xzy</p>
+        <button className="more-details-button">More Details</button>
+        </div>
       </div>
 
       <div className="flight">
-        <h1 className="name">Flight 3</h1>
+      <div class="box">
+        <div className="flight-image"></div>
+        <h1 className="flight-name">Flight xzy</h1>
+        <p className="flight-date">Flight Date xzy</p>
+        <p className="flight-description">Flight Description xzy</p>
+        <button className="more-details-button">More Details</button>
+        </div>
       </div>
 
       <div className="flight">
-        <h1 className="name">Flight 4</h1>
+      <div class="box">
+        <div className="flight-image"></div>
+        <h1 className="flight-name">Flight xzy</h1>
+        <p className="flight-date">Flight Date xzy</p>
+        <p className="flight-description">Flight Description xzy</p>
+        <button className="more-details-button">More Details</button>
+        </div>
       </div>
 
       <div className="flight">
-        <h1 className="name">Flight 5</h1>
+      <div class="box">
+        <div className="flight-image"></div>
+        <h1 className="flight-name">Flight xzy</h1>
+        <p className="flight-date">Flight Date xzy</p>
+        <p className="flight-description">Flight Description xzy</p>
+        <button className="more-details-button">More Details</button>
+        </div>
       </div>
 
       <div className="flight">
-        <h1 className="name">Flight 6</h1>
+      <div class="box">
+        <div className="flight-image"></div>
+        <h1 className="flight-name">Flight xzy</h1>
+        <p className="flight-date">Flight Date xzy</p>
+        <p className="flight-description">Flight Description xzy</p>
+        <button className="more-details-button">More Details</button>
+        </div>
       </div>
 
       <div className="flight">
-        <h1 className="name">Flight 7</h1>
+      <div class="box">
+        <div className="flight-image"></div>
+        <h1 className="flight-name">Flight xzy</h1>
+        <p className="flight-date">Flight Date xzy</p>
+        <p className="flight-description">Flight Description xzy</p>
+        <button className="more-details-button">More Details</button>
+        </div>
       </div>
 
       <div className="flight">
-        <h1 className="name">Flight 8</h1>
+      <div class="box">
+        <div className="flight-image"></div>
+        <h1 className="flight-name">Flight xzy</h1>
+        <p className="flight-date">Flight Date xzy</p>
+        <p className="flight-description">Flight Description xzy</p>
+        <button className="more-details-button">More Details</button>
+        </div>
       </div>
 
       <div className="flight">
-        <h1 className="name">Flight 9</h1>
+      <div class="box">
+        <div className="flight-image"></div>
+        <h1 className="flight-name">Flight xzy</h1>
+        <p className="flight-date">Flight Date xzy</p>
+        <p className="flight-description">Flight Description xzy</p>
+        <button className="more-details-button">More Details</button>
+        </div>
       </div>
+
     </div>
   );
 }

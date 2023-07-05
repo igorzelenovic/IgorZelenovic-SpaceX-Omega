@@ -24,48 +24,111 @@ body {
 }
 
 .flight {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.flight::before, .flight::after {
+  content: "";
+  background-color: #fab5704c;
+  position: absolute;
+}
+
+.flight::before {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  top: 30%;
+  right: 7%;
+}
+
+.flight::after {
+  content: "";
+  position: absolute;
+  height: 3rem;
+  top: 8%;
+  right: 5%;
+  border: 1px solid;
+}
+
+.flight .box {
+  width: 11.875em;
+  height: 15.875em;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: .7rem;
+  transition: all ease .3s;
+}
+
+.flight .box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  justify-content: space-between;
+}
+
+.flight .box .title {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: .1em
+}
+
+.flight .box div strong {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.flight.box div p {
+  margin: 0;
+  font-size: .9em;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
+
+.flight .box div span {
+  font-size: .7rem;
+  font-weight: 300;
+}
+
+.flight .box div span:nth-child(3) {
+  font-weight: 500;
+  margin-right: .2rem;
+}
+
+.flight .box:hover {
+  box-shadow: 0px 0px 20px 1px #ffbb763f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+.flight .flight-image {
+  width: 100%;
+  height: 200px;
   background-image: url("../assets/launch.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 10px;
 }
 
-.flight .name {
+.flight .flight-name {
   font-weight: bold;
-  margin-bottom: 5px;
-  color: #ffffff00;
+  margin-top: 10px;
+  color: #ffffff;
 }
 
-.flight .date {
-  font-style: italic;
-  margin-bottom: 5px;
+.flight .flight-date,
+.flight .flight-description {
+  margin-top: 5px;
+  color: #ffffff;
 }
 
-.flight .description {
-  text-align: center;
-}
-
-.load-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.load-more button {
-  padding: 10px 20px;
-  background-color: #007bff00;
+.more-details-button {
+  padding: 8px 16px;
+  background-color: #ad000097;
   color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.load-more button:hover {
-  background-color: #0056b3;
 }
