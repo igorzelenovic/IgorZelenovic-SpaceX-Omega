@@ -1,6 +1,8 @@
 .input-container {
   width: 220px;
-  position: relative;
+  position: absolute;
+  top: 30px;
+  right: 60px;
 }
 
 .icon {

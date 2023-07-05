@@ -87,9 +87,9 @@
   /* Dodajte ostale stilove za tamnu temu */
 }
 
-.theme-toggler {
+.switch {
   position: absolute;
-  top: 25px; /* pomeranje prema dole */
-  left: 25px; /* pomeranje udesno */
+  top: 40px;
+  left: 40px;
 }
 
