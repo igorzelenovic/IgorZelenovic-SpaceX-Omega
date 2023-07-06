@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./style/app.css";
 
 import Home from "./pages/Home";
-import "./style/home.css";
+import "./style/flightcard.css";
 
 import FlightDetailPage from "./pages/FlightDetailPage";
 import "./style/flightdetailpage.css";

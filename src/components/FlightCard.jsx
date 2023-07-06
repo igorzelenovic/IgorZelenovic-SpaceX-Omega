@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FlightItem() {
+function FlightCard() {
   return (
     <><div className="flight">
       <div className="box">
@@ -326,4 +326,4 @@ function FlightItem() {
   );
 }
 
-export default FlightItem;
+export default FlightCard;

@@ -1,18 +1,14 @@
-# Build direktorijumi
 build/
 dist/
 out/
 public/
 
-# Node.js
 node_modules/
 
-# Lokalna konfiguracija
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Sistemske datoteke
 .DS_Store
 Thumbs.db

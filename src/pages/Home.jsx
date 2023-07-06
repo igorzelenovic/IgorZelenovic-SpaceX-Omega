@@ -1,5 +1,5 @@
 import React from "react";
-import FlightItem from "../components/FlightItem";
+import FlightCard from "../components/FlightCard";
 import ThemeToggler from "../components/ThemeToggler";
 import SearchBar from "../components/SearchBar";
 import LogoSpaceX from "../components/LogoSpaceX";
@@ -10,7 +10,7 @@ function Home() {
       <ThemeToggler />
       <SearchBar />
       <LogoSpaceX />
-      <FlightItem />
+      <FlightCard />
     </div>
   );
 }
