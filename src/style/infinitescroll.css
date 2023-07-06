@@ -1,19 +1,17 @@
-/* InfiniteScroll.css */
-
-.container {
-  /* Stilovi za kontejner liste */
+.infinite-scroll-container {
   max-height: 400px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .item {
-  /* Stilovi za svaki pojedinačni stavku u listi */
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
 }
 
-.loader {
-  /* Stilovi za indikator učitavanja */
+.loading-message {
   text-align: center;
-  padding: 10px;
+  margin-top: 10px;
+  font-style: italic;
+  color: #888;
 }

@@ -1,36 +1,23 @@
 import React, { useEffect, useRef, useState } from 'react';
+import './infinite-scroll.css';
 
-function InfiniteScroll() {
-  const [page, setPage] = useState(0);
+function InfiniteScrollList() {
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
   const containerRef = useRef(null);
-  const gridContainerRef = useRef(null);
-  const loaderRef = useRef(null);
 
   useEffect(() => {
-    function fetchNextData() {
-      // Simulate loading the next 9 containers
-      setTimeout(() => {
-        for (let i = 0; i < 9; i++) {
-          const gridItem = document.createElement('div');
-          gridItem.classList.add('grid-item');
-          gridItem.textContent = `Kontejner ${page * 9 + i + 1}`;
-          gridContainerRef.current.appendChild(gridItem);
-        }
-        loaderRef.current.style.display = 'none'; // Hide the loader after loading
-        setPage((prevPage) => prevPage + 1); // Increase the current page number
-      }, 1000);
-    }
+    fetchData();
+  }, []);
 
+  useEffect(() => {
     function handleScroll() {
-      const scrollTop =
-        document.documentElement.scrollTop || document.body.scrollTop;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.offsetHeight;
+      const container = containerRef.current;
+      const { scrollTop, clientHeight, scrollHeight } = container;
 
-      if (scrollTop + windowHeight >= documentHeight - 100) {
-        // When reaching the end of the page
-        loaderRef.current.style.display = 'block'; // Show the loader
-        fetchNextData(); // Load the next data
+      if (scrollTop + clientHeight >= scrollHeight && !isLoading) {
+        fetchNextPage();
       }
     }
 
@@ -39,16 +26,52 @@ function InfiniteScroll() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [page]);
+  }, [isLoading]);
+
+  const fetchData = async () => {
+    setIsLoading(true);
+
+    try {
+      // Simulate API call to fetch data for the initial page
+      const response = await fetch(`your-api-url?page=${page}&limit=20`);
+      const newData = await response.json();
+
+      setData(newData);
+      setPage(page + 1);
+    } catch (error) {
+      console.log('Error fetching data:', error);
+    }
+
+    setIsLoading(false);
+  };
+
+  const fetchNextPage = async () => {
+    setIsLoading(true);
+
+    try {
+      // Simulate API call to fetch data for the next page
+      const response = await fetch(`your-api-url?page=${page}&limit=20`);
+      const newData = await response.json();
+
+      setData((prevData) => [...prevData, ...newData]);
+      setPage(page + 1);
+    } catch (error) {
+      console.log('Error fetching data:', error);
+    }
+
+    setIsLoading(false);
+  };
 
   return (
-    <div>
-      <div ref={containerRef}>
-        <div ref={gridContainerRef}></div>
-        <div ref={loaderRef}>Loading...</div>
-      </div>
+    <div className="infinite-scroll-container" ref={containerRef}>
+      {data.map((item, index) => (
+        <div key={index} className="item">
+          {/* Render item content here */}
+        </div>
+      ))}
+      {isLoading && <div className="loading-message">Loading...</div>}
     </div>
   );
 }
 
-export default InfiniteScroll;
+export default InfiniteScrollList;

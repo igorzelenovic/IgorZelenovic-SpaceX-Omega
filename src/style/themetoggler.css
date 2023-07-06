@@ -101,4 +101,6 @@
   position: absolute;
   top: 40px;
   left: 40px;
+  position: fixed;
+  z-index: 2;
 }
