@@ -5,6 +5,7 @@ function InfiniteScrollList() {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
+  const [showLoadMore, setShowLoadMore] = useState(true);
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -38,6 +39,11 @@ function InfiniteScrollList() {
 
       setData(newData);
       setPage(page + 1);
+
+      // Check if there are more pages to load
+      if (newData.length === 0) {
+        setShowLoadMore(false);
+      }
     } catch (error) {
       console.log('Error fetching data:', error);
     }
@@ -55,6 +61,11 @@ function InfiniteScrollList() {
 
       setData((prevData) => [...prevData, ...newData]);
       setPage(page + 1);
+
+      // Check if there are more pages to load
+      if (newData.length === 0) {
+        setShowLoadMore(false);
+      }
     } catch (error) {
       console.log('Error fetching data:', error);
     }
@@ -70,6 +81,11 @@ function InfiniteScrollList() {
         </div>
       ))}
       {isLoading && <div className="loading-message">Loading...</div>}
+      {showLoadMore && (
+        <button className="load-more" onClick={fetchNextPage}>
+          Load More
+        </button>
+      )}
     </div>
   );
 }

@@ -12,7 +12,7 @@ function Home() {
       <LogoSpaceX />
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -22,7 +22,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -32,7 +32,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -42,7 +42,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -52,7 +52,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -62,7 +62,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -72,7 +72,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -82,7 +82,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -92,7 +92,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -102,7 +102,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -112,7 +112,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -122,7 +122,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -132,7 +132,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -142,7 +142,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -152,7 +152,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -162,7 +162,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -172,7 +172,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -182,7 +182,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -192,7 +192,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -202,7 +202,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -212,7 +212,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -222,7 +222,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -232,7 +232,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -242,7 +242,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -252,7 +252,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -262,7 +262,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -272,7 +272,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -282,7 +282,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -292,7 +292,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -302,7 +302,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -312,7 +312,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -322,7 +322,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -332,7 +332,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -342,7 +342,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -352,7 +352,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -362,7 +362,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -372,7 +372,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -382,7 +382,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -392,7 +392,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
@@ -402,7 +402,7 @@ function Home() {
       </div>
 
       <div className="flight">
-      <div class="box">
+      <div className="box">
         <div className="flight-image"></div>
         <h1 className="flight-name">Flight xzy</h1>
         <p className="flight-date">Flight Date xzy</p>
