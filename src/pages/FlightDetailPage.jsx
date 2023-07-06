@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
 
-function FlightDetailPage() {
+function FlightDetailPage(props) {
+  const { id } = props.match.params; // Dohvaćanje flightId iz ruta
+  // Dobijanje detalja leta na osnovu id i prikazivanje tih detalja na stranici
+
   return (
     <div>
-      <h1>Flight Details</h1>
-      {/* Prikaz detalja leta */}
+      <h1>Flight Detail Page</h1>
+      <p>Flight ID: {id}</p>
+      {/* Prikaz ostalih detalja leta */}
     </div>
   );
 }
